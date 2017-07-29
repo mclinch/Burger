@@ -1,4 +1,5 @@
-<div class="container center">
+
+<div class="container center" id="background">
 <img src="/assets/img/double_double_meal.png" id="burger-img" height="200">
 <h1 id="header">Dream-Burger!</h1>
 
@@ -18,7 +19,7 @@
           {{burger_name}}
             <form action="/{{id}}?_method=PUT" method="POST">
               <input type="hidden" name = "devour" value="true">
-              <button type="submit">Eat!</button>
+              <button class="eat waves-effect waves-light btn" type="submit">Eat!</button>
             </form>
           </li>
           {{/unless}}
@@ -38,7 +39,7 @@
           {{burger_name}}
             <form action="/{{id}}?_method=PUT" method="POST">
               <input type="hidden" name = "devour" value="false">
-              <button type="submit">I'm Full!</button>
+              <button class="eat waves-effect waves-light btn" type="submit">I'm Full!</button>
             </form>
           </li>
           {{/if}}
@@ -58,11 +59,20 @@
       <input type="text" id="" name ="burger_name">
     </div>
 
-    <button type="submit">Place Order</button>
+    <button class="eat waves-effect waves-light btn red lighten-4" type="submit">Place Order</button>
   </form>
   </div>
 
 
-<div id="footer"></div>
+<footer id="footer class="page footer">
+<div class="container">
+
+            <div class="container">
+            © 2017 Copyright MCLINCH 
+            
+            </div>
+          </div>
+          
+</footer>
   
 
